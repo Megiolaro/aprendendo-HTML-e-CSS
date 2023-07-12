@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: white;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: var(--cor-secundaria);
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+.texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+strong{
+  color: var(--cor-terciaria);
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+}
+
+.botao:hover{
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.subtitulo{
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cabecalho__menu__link{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.imagem{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
+
